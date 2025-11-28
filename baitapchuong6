@@ -1,0 +1,7 @@
+str = 'X-DSPAM-Confidence:0.8475'
+
+colon_pos = str.find(':')           # Tìm vị trí dấu :
+number_str = str[colon_pos + 1:]    # Lấy phần sau dấu :
+value = float(number_str)           # Đổi sang số thực
+
+print(value)
